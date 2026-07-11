@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-relm"
+version = "0.1.0"
+description = "LangChain tools for Relm - the CRM for LLMs and AI agents"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Relm", email = "hello@relmcrm.com" }]
+keywords = ["langchain", "langgraph", "crm", "llm", "ai-agents", "mcp", "relm", "tools"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "langchain-core>=0.2",
+  "requests>=2.28",
+  "pydantic>=2",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://relmcrm.com"
+Documentation = "https://relmcrm.com/docs"
+Repository = "https://github.com/98000m/langchain-relm"
+"Agent hub" = "https://relmcrm.com/agents"
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_relm"]
