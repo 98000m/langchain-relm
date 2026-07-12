@@ -11,7 +11,9 @@ turn** instead of crashing on a bad field or stage.
 ## Install
 
 ```bash
-pip install langchain-relm
+pip install langchain-relm                                  # once it's on PyPI
+# or install the latest straight from source:
+pip install "git+https://github.com/98000m/langchain-relm.git"
 ```
 
 ## Quickstart
